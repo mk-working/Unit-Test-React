@@ -355,7 +355,7 @@ hint: there are 3 test cases for the component
 1. understand the `syntax` of `JS` and `TS`
 2. understand the `state` and `props` of a component
 3. understand the `logic` of the component
-4. understand the `pure component`
+4. understand the `pure component`  
 5. understand the `effect` and `rendering`
 
 #### Define `Test Case` for the `ExpandableText` component
@@ -376,7 +376,9 @@ hint: there are 3 test cases for the component
 
 1. define `helper function` for **rendering the component** and returning the common element that we want to `query`
    - code:
-   
+
+### Create the Function that return the object
+
 >     const renderComponent = () => {
 >     render(<TermsAndConditions/>);
 >
@@ -384,4 +386,7 @@ hint: there are 3 test cases for the component
 >     heading: screen.getByRole("heading"),
 >     checkbox: screen.getByRole("checkbox"),
 >     button: screen.getByRole("button") }}
-    
+
+### Use the Object return by the Function
+
+> const {heading, checkbox, button} = renderComponent()
